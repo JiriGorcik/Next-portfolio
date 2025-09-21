@@ -24,11 +24,11 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <span className="font-bold">Hello, I&#39;m Ricardo.</span> I&#39;m a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, I&#39;m Jiří.</span> I&#39;m a{" "}
+        <span className="font-bold">Full-Stack Developer</span> with{" "}
+        <span className="font-bold">over 1.5 years</span> of experience. My
+        focus is on <span className="italic">Frontend Development</span>. I love
+        learning new things and continuously improving my skills.
       </motion.h1>
 
       <motion.div

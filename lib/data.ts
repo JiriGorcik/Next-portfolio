@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import devFlowImg from "@/public/devFlowImg.png";
+import hooBankImg from "@/public/hooBankImg.png";
 
 export const links = [
   {
@@ -35,52 +35,75 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Praha Coding School Bootcamp",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "A three-month bootcamp where I learned the basics of web development",
+    tech: ["HTML", "CSS", "JavaScript", "PHP"],
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Unicorn, Plzeň",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I started in the service team, where I fixed bugs, wrote automation scripts, and developed frontend components. Later, I moved to the development team, where I contributed to application design, implementation, and ensured the smooth and reliable functioning of applications.",
+    tech: ["React", "MongoDB", "Node.js"],
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - 2025",
+  },
+  {
+    title: "Unicorn University Certificate",
+    location: "Remote",
+    description:
+      "While working at Unicorn, I earned a certification through their University.",
+    tech: ["Developer", "Designer"],
+    icon: React.createElement(LuGraduationCap),
+    date: "2025",
+  },
+  {
+    title: "JsMastery Next.js Course",
+    location: "Remote",
+    description:
+      "Completed a paid comprehensive course on Next.js, covering advanced concepts and best practices for building scalable web applications.",
+    tech: ["Next", "TypeScript", "Tailwind"],
+    icon: React.createElement(LuGraduationCap),
+    date: "2025",
   },
 ] as const;
 
 export const projectsData = [
   {
+    title: "DevOverFlow",
+    description:
+      "A Q&A web application inspired by Stack Overflow, featuring a modern user interface and additional functionality beyond the original platform",
+    tags: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "Zod", "OpenAI"],
+    imageUrl: devFlowImg,
+    link: "https://devflow-nine.vercel.app/",
+  },
+  {
+    title: "HooBank",
+    description:
+      "A modern banking application landing page built with React and Tailwind CSS, featuring a responsive layout and sleek, user-friendly design.",
+    tags: ["React", "Tailwind"],
+    imageUrl: hooBankImg,
+    link: "https://jirigorcik.github.io/ModernBankApp/",
+  },
+  {
     title: "CorpComment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A web application that allows users to give anonymous feedback to companies. It includes features such as posting feedback, upvoting, and filtering feedback by company.",
+    tags: ["React", "TypeScript", "CSS", "Zustand"],
     imageUrl: corpcommentImg,
+    link: "https://corp-comment-orcin.vercel.app/",
   },
   {
     title: "rmtDev",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A job board web application for remote developer positions, featuring filtering, sorting, pagination, query caching, and bookmarks.",
+    tags: ["React", "TypeScript", "CSS", "TanStack"],
     imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    link: "https://rmt-dev-alpha.vercel.app/",
   },
 ] as const;
 
@@ -94,14 +117,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Mongoose",
+  "Shadcn UI",
+  "Zod",
 ] as const;

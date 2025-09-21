@@ -52,6 +52,9 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <p className="!mt-1 !font-light !text-sm text-gray-700 dark:text-white/75 italic">
+                ({item.tech.join(", ")})
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
